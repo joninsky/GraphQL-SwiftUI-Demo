@@ -1,0 +1,6 @@
+{
+  "f58ba3f3222ffac342294620663307745619728b02d84f801a22997c200f631b": {
+    "name": "Businesses",
+    "source": "query Businesses($searchTerm: String, $latitude: Float, $longitude: Float) {\n  search(term: $searchTerm, latitude: $latitude, longitude: $longitude) {\n    __typename\n    business {\n      __typename\n      id\n      name\n      url\n      rating\n      photos\n      distance\n    }\n  }\n}"
+  }
+}

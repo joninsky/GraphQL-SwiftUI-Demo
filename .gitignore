@@ -19,3 +19,4 @@ Development.xcconfig
 
 Carthage/*
 Pods/*
+Codegen/ApolloCLI/*

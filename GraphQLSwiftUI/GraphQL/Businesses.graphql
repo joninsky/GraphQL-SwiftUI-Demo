@@ -1,0 +1,12 @@
+query Businesses($searchTerm: String, $latitude: Float, $longitude: Float) {
+  search(term: $searchTerm, latitude: $latitude, longitude: $longitude) {
+    business {
+      id
+      name
+      url
+      rating
+      photos
+      distance
+    }
+  }
+}
