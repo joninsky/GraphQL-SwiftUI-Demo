@@ -14,6 +14,8 @@ import Apollo
 class ApolloController {
     
     static let shared = ApolloController()
+    
+    let YELP_API_KEY = "<put it here>"
   
     // Configure the network transport to use the singleton as the delegate.
     private lazy var networkTransport: HTTPNetworkTransport = {
@@ -39,11 +41,11 @@ extension ApolloController: HTTPNetworkTransportPreflightDelegate {
         // Get the existing headers, or create new ones if they're nil
         var headers = request.allHTTPHeaderFields ?? [String: String]()
 
-        //Needed for YELP API
+        //Needed for YELP API or you get an error about language.
         headers["Accept-Language"] = "en_US"
 
         // Add any new headers you need
-        headers["Authorization"] = "Bearer qco6Jeyqwo8-v8QRaCxWSiO5Fwr7JhWOSObUthK4ajdFVGuTvPHNjmi_b9A_UaOAmJzo2Vt6GlEmyxJwIOs2yWXr3FcPK0x3QBA-YpLFPq-w_UnIl9Q4bb0_SumwXHYx"
+        headers["Authorization"] = "Bearer \(self.YELP_API_KEY)"
 
         // Re-assign the updated headers to the request.
         request.allHTTPHeaderFields = headers

@@ -11,6 +11,7 @@ import Apollo
 import CoreLocation
 
 class ApolloNetworkingController: ObservableObject {
+    
     @Published var businesses: [BusinessFragment] = []
     
     @Published var businessesQueryRunning: Bool = false

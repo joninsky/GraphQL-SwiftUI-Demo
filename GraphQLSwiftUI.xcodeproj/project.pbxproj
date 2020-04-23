@@ -88,7 +88,6 @@
 		761DE068244E5B5B009D33E5 /* GraphQLSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				761DE0AB2450CE4F009D33E5 /* GlobalVariables */,
 				761DE09B244F5262009D33E5 /* Controllers */,
 				761DE095244EACFE009D33E5 /* Extensions */,
 				761DE08C244E617D009D33E5 /* Views */,
@@ -157,13 +156,6 @@
 				761DE09C244F5273009D33E5 /* LocationController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		761DE0AB2450CE4F009D33E5 /* GlobalVariables */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GlobalVariables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
